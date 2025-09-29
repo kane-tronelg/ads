@@ -3,22 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full GIF</title>
+  <title>Full GIF with LINE Chat</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      width: 100%;
+      background: #fff; 
     }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
     img {
       display: block;
-      width: 100%; 
-      height: auto; 
+      width: 100%;
+      height: auto;
+      max-width: 1080px; 
+    }
+
+    /* LINE bubble */
+    .line-bubble {
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #00B900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.2s;
+      z-index: 999;
+    }
+    .line-bubble:hover {
+      transform: scale(1.1);
+    }
+    .line-bubble img {
+      width: 36px;
+      height: 36px;
     }
   </style>
 </head>
 <body>
-  <img src="GIF-For-Landing-Page.gif" alt="Full GIF">
+  <div class="container"><a href="http://aa3125.pecv3595.net/">
+    <img src="GIF-For-Landing-Page.gif" alt="Full GIF">
+  </a>
+  </div>
+
+  <!-- LINE bubble -->
+  <a href="https://lin.ee/9yjOY7i" target="_blank" class="line-bubble">
+    <img src="https://scdn.line-apps.com/n/line_regulation/files/line_logo.png" alt="LINE">
+  </a>
 </body>
 </html>
